@@ -1,11 +1,13 @@
 # iPhone Organizer 
 
+<img src="https://s3.amazonaws.com/after-school-assets/iphone-correct.png" alt="correct iphone" align="right" height="300" hspace="10">
+
 Everyone always has specific places where they like their apps to go on their phone. It's muscle memory to get to them, and we take that layout for granted.But how confused would you be if someone rearranged your apps?
 
 Fortunately for us, we can use CSS positioning to put our apps back in their original spots, just like in the image below!
 
 If you look at the site in the browser, you'll notice the icons are all clumped together to the left of the iPhone. They're not even on the screen! Our job is to move the icons to their appropriate spots, just like in this image
-<img src="https://s3.amazonaws.com/after-school-assets/iphone-correct.png" alt="correct iphone" align="right" height="300" hspace="10">
+
 ## Let's Get Started
 
 ### Step 1:
