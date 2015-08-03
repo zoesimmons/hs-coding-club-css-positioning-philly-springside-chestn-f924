@@ -2,7 +2,7 @@
 
 <img src="https://s3.amazonaws.com/after-school-assets/iphone-correct.png" alt="correct iphone" align="right" height="300" hspace="10">
 
-Everyone always has specific places where they like their apps to go on their phone. It's muscle memory to get to them, and we take that layout for granted.But how confused would you be if someone rearranged your apps?
+Everyone always has specific places where they like their apps to go on their phone. It's muscle memory to get to them, and we take that layout for granted. But how confused would you be if someone rearranged your apps?
 
 Fortunately for us, we can use CSS positioning to put our apps back in their original spots, just like in the image below!
 
@@ -20,7 +20,7 @@ Open this lesson in Nitrous, by clicking the `Open In Nitrous` button in learn.
 
 #### Step 2:
 
-Open `index.html` in the browser by running in terminal ` `python -m SimpleHTTPServer 3000`. 
+Open `index.html` in the browser by running in terminal `python -m SimpleHTTPServer 3000`. 
 
 Once you have the server running, select `preview` and then `port 3000`.
 
@@ -32,7 +32,7 @@ You're going to code your solution in `css/absolute.css` and `css/relative.css`.
 
 #### Step 3:
 
-Take a look at `index.html`. You should notice several things:
+Take a look at the code in `index.html`. You should notice several things:
 
 + The app icons are grouped into threes
 
@@ -59,9 +59,13 @@ In our `css/absolute.css`, copy and paste the code below.
 
 We use `#first-three` as our CSS selector, which is a `div` that contains three images - the app icons we're moving (SnapChat, Weather, and Angry Birds). 
 
-The first property we set is `position`. This property can have several different values, but the most important two are `absolute` and `relative`. `Absolute` means that an element's position is defined specifically. It's like telling someone, go stand in the top left corner of the room, 10 feet from the left wall, and ten feet from the top wall. No matter the size of the room, you always have to stay 10 feet from the top and the left. `relative` means that the placement of an element is relative to other elements. It's like saying stand 10% of the length of the room away from the top, and 15% of the width of the room away from the left of the wall. If the room shrinks, so do those percentages and thus your placement.
+The first property we set is `position`. This property can have several different values, but the most important two are `absolute` and `relative`. 
 
-We set `position: absolute;` for now, which means the position of this div containing the three icons is never going to move. We the set `top: 300px`, meaning the images are going to be 300 pixels away from the top of the page. We also set `left: 620px;` meaning the images are going to be 620 pixels from the left side of the page.
+`absolute` means that an element's position is defined specifically. It's like telling someone, go stand in the top left corner of the room, 10 feet from the left wall, and ten feet from the top wall. No matter the size of the room, you always have to stay 10 feet from the top and the left. 
+
+`relative` means that the placement of an element is relative to other elements. It's like saying stand 10% of the length of the room away from the top, and 15% of the width of the room away from the left of the wall. If the room shrinks, so do those percentages and thus your placement.
+
+We set `position: absolute;` for now, which means the position of this `div` containing the three icons is never going to move. We the set `top: 300px`, meaning the images are going to be 300 pixels away from the top of the page. We also set `left: 620px;` meaning the images are going to be 620 pixels from the left side of the page.
 
 #### Step 4: 
 
@@ -105,7 +109,7 @@ Now we need to space the icons away from them appropriately. You'll remember fro
 
 ```
 
-We already have Snapchat where we want it on the left, we just need space on the right, so we set `margin-right: 20px`. The Weather app needs space on both the left and the right, so we set both `margin-left` and `margin-right`.Angry Bird only needs margin on the left, `margin-left: 20px`.
+We already have Snapchat where we want it on the left, we just need space on the right, so we set `margin-right: 20px`. The weather app needs space on both the left and the right, so we set both `margin-left` and `margin-right`.Angry Bird only needs margin on the left, `margin-left: 20px`.
 
 Save and refresh in the browser!
 
@@ -153,7 +157,16 @@ Save, refresh in the browser and see your perfectly laid out icons! But now try 
 
 This is where relative positioning becomes really powerful, without setting absolute locations for our HTML elements, our page can become responsive, which means it will look good no matter the size of our webpage.
 
+
+
 #### Step 1:
+
+First, we need to comment out our code in `css/absolute.css`. Select all of the text in that page, and then hold down the `command` key on the keyboard and the `?` key on the keyboard at the same time. Save that file.
+
+You'll be coding your soltuion in `css/relative.css`.
+
+
+#### Step 2:
 
 The first thing that we need to do is define each `div` of icons to only take up 1/3 of the height of it's parent, which is the `div` with the id `images`, which will create our rows of icons. Copy and paste the following code into `css/relative.css`:
 
@@ -167,7 +180,7 @@ The first thing that we need to do is define each `div` of icons to only take up
 
 We use the class `one-third` and assign the `position` property to `relative`. This means that the width and height of these rows will be relative to the height of the parent div (the div with the id iphone). We set `height: 33.3333333%;`, which means each row will take up 33.3333333% of it's parent.
 
-#### Step 2:
+#### Step 3:
 
 Now that we have our three rows, we need to absolutely position our icons inside those relative rows. This way, as the iPhone scales in size, the icons slide with them. Let's take the first row (Snapchat, Weather, and Angry Bird)
 
@@ -200,7 +213,7 @@ On all three images, we're using the id as our CSS selector. From there, we're s
 
 Save and refresh in the browser. Go ahead and try to shrink your browser window.
 
-#### Step 3:
+#### Step 4:
 
 Now let's do the other two rows! Copy and paste the following into `css/relative.css`:
 
