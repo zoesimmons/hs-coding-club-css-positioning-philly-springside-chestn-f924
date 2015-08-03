@@ -109,7 +109,7 @@ Now we need to space the icons away from them appropriately. You'll remember fro
 
 ```
 
-We already have Snapchat where we want it on the left, we just need space on the right, so we set `margin-right: 20px`. The Weather app needs space on both the left and the right, so we set both `margin-left` and `margin-right`.Angry Bird only needs margin on the left, `margin-left: 20px`.
+We already have Snapchat where we want it on the left, we just need space on the right, so we set `margin-right: 20px`. The weather app needs space on both the left and the right, so we set both `margin-left` and `margin-right`.Angry Bird only needs margin on the left, `margin-left: 20px`.
 
 Save and refresh in the browser!
 
@@ -157,7 +157,16 @@ Save, refresh in the browser and see your perfectly laid out icons! But now try 
 
 This is where relative positioning becomes really powerful, without setting absolute locations for our HTML elements, our page can become responsive, which means it will look good no matter the size of our webpage.
 
+
+
 #### Step 1:
+
+First, we need to comment out our code in `css/absolute.css`. Select all of the text in that page, and then hold down the `command` key on the keyboard and the `?` key on the keyboard at the same time. Save that file.
+
+You'll be coding your soltuion in `css/relative.css`.
+
+
+#### Step 2:
 
 The first thing that we need to do is define each `div` of icons to only take up 1/3 of the height of it's parent, which is the `div` with the id `images`, which will create our rows of icons. Copy and paste the following code into `css/relative.css`:
 
@@ -171,7 +180,7 @@ The first thing that we need to do is define each `div` of icons to only take up
 
 We use the class `one-third` and assign the `position` property to `relative`. This means that the width and height of these rows will be relative to the height of the parent div (the div with the id iphone). We set `height: 33.3333333%;`, which means each row will take up 33.3333333% of it's parent.
 
-#### Step 2:
+#### Step 3:
 
 Now that we have our three rows, we need to absolutely position our icons inside those relative rows. This way, as the iPhone scales in size, the icons slide with them. Let's take the first row (Snapchat, Weather, and Angry Bird)
 
@@ -204,7 +213,7 @@ On all three images, we're using the id as our CSS selector. From there, we're s
 
 Save and refresh in the browser. Go ahead and try to shrink your browser window.
 
-#### Step 3:
+#### Step 4:
 
 Now let's do the other two rows! Copy and paste the following into `css/relative.css`:
 
