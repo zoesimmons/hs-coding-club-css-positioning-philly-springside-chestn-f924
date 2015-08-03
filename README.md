@@ -2,7 +2,7 @@
 
 <img src="https://s3.amazonaws.com/after-school-assets/iphone-correct.png" alt="correct iphone" align="right" height="300" hspace="10">
 
-Everyone always has specific places where they like their apps to go on their phone. It's muscle memory to get to them, and we take that layout for granted.But how confused would you be if someone rearranged your apps?
+Everyone always has specific places where they like their apps to go on their phone. It's muscle memory to get to them, and we take that layout for granted. But how confused would you be if someone rearranged your apps?
 
 Fortunately for us, we can use CSS positioning to put our apps back in their original spots, just like in the image below!
 
@@ -20,7 +20,7 @@ Open this lesson in Nitrous, by clicking the `Open In Nitrous` button in learn.
 
 #### Step 2:
 
-Open `index.html` in the browser by running in terminal ` `python -m SimpleHTTPServer 3000`. 
+Open `index.html` in the browser by running in terminal `python -m SimpleHTTPServer 3000`. 
 
 Once you have the server running, select `preview` and then `port 3000`.
 
@@ -32,7 +32,7 @@ You're going to code your solution in `css/absolute.css` and `css/relative.css`.
 
 #### Step 3:
 
-Take a look at `index.html`. You should notice several things:
+Take a look at the code in `index.html`. You should notice several things:
 
 + The app icons are grouped into threes
 
@@ -59,9 +59,13 @@ In our `css/absolute.css`, copy and paste the code below.
 
 We use `#first-three` as our CSS selector, which is a `div` that contains three images - the app icons we're moving (SnapChat, Weather, and Angry Birds). 
 
-The first property we set is `position`. This property can have several different values, but the most important two are `absolute` and `relative`. `Absolute` means that an element's position is defined specifically. It's like telling someone, go stand in the top left corner of the room, 10 feet from the left wall, and ten feet from the top wall. No matter the size of the room, you always have to stay 10 feet from the top and the left. `relative` means that the placement of an element is relative to other elements. It's like saying stand 10% of the length of the room away from the top, and 15% of the width of the room away from the left of the wall. If the room shrinks, so do those percentages and thus your placement.
+The first property we set is `position`. This property can have several different values, but the most important two are `absolute` and `relative`. 
 
-We set `position: absolute;` for now, which means the position of this div containing the three icons is never going to move. We the set `top: 300px`, meaning the images are going to be 300 pixels away from the top of the page. We also set `left: 620px;` meaning the images are going to be 620 pixels from the left side of the page.
+`absolute` means that an element's position is defined specifically. It's like telling someone, go stand in the top left corner of the room, 10 feet from the left wall, and ten feet from the top wall. No matter the size of the room, you always have to stay 10 feet from the top and the left. 
+
+`relative` means that the placement of an element is relative to other elements. It's like saying stand 10% of the length of the room away from the top, and 15% of the width of the room away from the left of the wall. If the room shrinks, so do those percentages and thus your placement.
+
+We set `position: absolute;` for now, which means the position of this `div` containing the three icons is never going to move. We the set `top: 300px`, meaning the images are going to be 300 pixels away from the top of the page. We also set `left: 620px;` meaning the images are going to be 620 pixels from the left side of the page.
 
 #### Step 4: 
 
