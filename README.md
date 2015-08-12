@@ -4,7 +4,7 @@
 
 Everyone always has specific places where they like their apps to go on their phone. It's muscle memory to get to them, and we take that layout for granted. But how confused would you be if someone rearranged your apps?
 
-Fortunately for us, we can use CSS positioning to put our apps back in their original spots, just like in the image below!
+Fortunately for us, we can use CSS positioning to put our apps back in their original spots, just like in this iPhone!
 
 If you look at the site in the browser, you'll notice the icons are all clumped together to the left of the iPhone. They're not even on the screen! Our job is to move the icons to their appropriate spots, just like in this image to the right.
 
@@ -14,25 +14,17 @@ If you look at the site in the browser, you'll notice the icons are all clumped 
 
 #### Step 1:
 
-Open this lesson in Nitrous, by clicking the `Open In Nitrous` button in learn.
-
-<img src="https://s3.amazonaws.com/after-school-assets/open-in-nitrous.png">
+Fork and clone this lab. You'll want to have `index.html`, `css/absolutely.css` and `css/relative.css` open in the Nitrous text editor, as well as the browser. Take a look at the `How To: Work On A Lab` for a refresher on how to get this done!
 
 #### Step 2:
 
-Open `index.html` in the browser by running in terminal `python -m SimpleHTTPServer 3000`. 
-
-Once you have the server running, select `preview` and then `port 3000`.
-
-<img src="https://s3.amazonaws.com/after-school-assets/nitrous-preview.png" alt="nitrous preview">
-
-Make sure your broswer is the full width of your computer screen, and not minimized at all.
+Make sure your broswer, with `index.html` open in the browser, is the full width of your computer screen, and not minimized at all.
 
 You're going to code your solution in `css/absolute.css` and `css/relative.css`. Go ahead and open that file in Nitrous, as well as `index.html`. You'll want to familiarize yourself with the code there. 
 
 #### Step 3:
 
-Take a look at the code in `index.html`. You should notice several things:
+Take a look at the code in `index.html` in the Nitrous text editor. You should notice several things:
 
 + The app icons are grouped into threes
 
@@ -40,11 +32,11 @@ Take a look at the code in `index.html`. You should notice several things:
 
 + The three divs are also in a single `div` with the id `iphone`
 
-If you look at the site in the browser, you'll notice the icons are all clumped together to the left of the iPhone. They're not even on the screen! Our job is to move the icons to their appropriate spots.
+If you look at the site in the browser, you'll notice the icons are all clumped together near the top left corner of the iPhone. They're not even on the screen! Our job is to move the icons to their appropriate spots on the screen.
 
 ### Step 4:
 
-Let's start with the first group of images. First, we need to move the group, and then we can space each image individually.
+Let's start with the first row of icons(SnapChat, Weather, and Angry Birds). First, we need to move the group, and then we can space each image individually.
 
 In our `css/absolute.css`, copy and paste the code below.
 
@@ -57,9 +49,9 @@ In our `css/absolute.css`, copy and paste the code below.
 }
 ```
 
-We use `#first-three` as our CSS selector, which is a `div` that contains three images - the app icons we're moving (SnapChat, Weather, and Angry Birds). 
+We use `#first-three` as our CSS selector, which is a `div` that contains three images - the app icons we're moving. 
 
-The first property we set is `position`. This property can have several different values, but the most important two are `absolute` and `relative`. 
+The first property we set is `position`. This property can have several different values, but the most important two to know are `absolute` and `relative`. 
 
 `absolute` means that an element's position is defined specifically. It's like telling someone, go stand in the top left corner of the room, 10 feet from the left wall, and ten feet from the top wall. No matter the size of the room, you always have to stay 10 feet from the top and the left. 
 
@@ -84,13 +76,15 @@ We want to go ahead and use the same CSS for the other two divs of images. Copy 
   left: 620px;
 }
 ```
+If you look at this code, you'll notice the distance from the left side of the page stays the same, but the distance from the top increases by 100 pixels for each one. If we want the second set of icons to be below the first set, they need to be farther from the top.
 
-You'll notice the distance from the left side of the page stays the same, but the distance from the top increases by 100 pixels for each one. If we want the second set of icons to be below the first set, they need to be farther from the top.
+Save your changes, and refresh in the browser. Finally we have all the icons on the screen!
 
 #### Step 5: 
 
-Now we need to space the icons away from them appropriately. You'll remember from the box model, that `margin` governs the space between elements. We can set `margin-left` and `margin-right`:
+Now we need to space the icons away from each other appropriately. You'll remember from the box model, that `margin` governs the space between elements. We can set `margin-left` and `margin-right`.
 
+Let's space out Snapchat, Weather, and Angry Bird. Copy the following code and paste it in `css/absolute.css`:
 ```css
 
 #snapchat {
@@ -157,26 +151,25 @@ Save, refresh in the browser and see your perfectly laid out icons! But now try 
 
 This is where relative positioning becomes really powerful, without setting absolute locations for our HTML elements, our page can become responsive, which means it will look good no matter the size of our webpage.
 
-
-
 #### Step 1:
 
-First, we need to comment out our code in `css/absolute.css`. Select all of the text in that page, and then hold down the `command` key on the keyboard and the `?` key on the keyboard at the same time. Save that file.
+First, we need to comment out our code in `css/absolute.css`. Select all of the text in that page, and then hold down the `command` key on the keyboard and the `?` key on the keyboard at the same time to comment out the code. Save that file.
 
 You'll be coding your soltuion in `css/relative.css`.
 
 
 #### Step 2:
+You'll notice in `index.html`, that the `div` with the id `images` is the parent of the three different divs that make up each row of icons.
 
-The first thing that we need to do is define each `div` of icons to only take up 1/3 of the height of it's parent, which is the `div` with the id `images`, which will create our rows of icons. Copy and paste the following code into `css/relative.css`:
+The first thing that we need to do is define each `div` of icons to only take up 1/3 of the height of it's parent,which will create our rows of icons. Copy and paste the following code into `css/relative.css`:
 
 ```css
 .one-third {
   position: relative;
-  height: 33.3333333%;
+  display: block;
+  height: 20%;
   width: 100%;
-}
-```
+}```
 
 We use the class `one-third` and assign the `position` property to `relative`. This means that the width and height of these rows will be relative to the height of the parent div (the div with the id iphone). We set `height: 33.3333333%;`, which means each row will take up 33.3333333% of it's parent.
 
@@ -184,7 +177,7 @@ We use the class `one-third` and assign the `position` property to `relative`. T
 
 Now that we have our three rows, we need to absolutely position our icons inside those relative rows. This way, as the iPhone scales in size, the icons slide with them. Let's take the first row (Snapchat, Weather, and Angry Bird)
 
-Copy and paste into `css/relative.css`:
+Copy the code below and paste it into `css/relative.css`:
 
 ```css
 #snapchat {
@@ -262,5 +255,7 @@ Now let's do the other two rows! Copy and paste the following into `css/relative
 }
 ```
 
-And DONE!
+Save your changes and refresh in the browser. Now when you shrink your page, the icons all still stay in the correct place! DONE!
+
+
 
