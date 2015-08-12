@@ -14,7 +14,7 @@ If you look at the site in the browser, you'll notice the icons are all clumped 
 
 #### Step 1:
 
-Fork and clone this lab. You'll want to have `index.html`, `css/absolutely.css` and `css/relative.css` open in the Nitrous text editor, as well as the browser. Take a look at the `How To: Work On A Lab` for a refresher on how to get this done!
+Fork and clone this lab. You'll want to have `index.html`, `css/absolutely.css` and `css/relative.css` open in the Nitrous text editor, as well as the browser. Take a look at the `How To: Fork and Clone A Lab` for a refresher on how to get this done!
 
 #### Step 2:
 
