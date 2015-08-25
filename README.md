@@ -257,5 +257,9 @@ Now let's do the other two rows! Copy and paste the following into `css/relative
 
 Save your changes and refresh in the browser. Now when you shrink your page, the icons all still stay in the correct place! DONE!
 
+## Share Share Share!
+
+Do you know what time is? Time to share your work! Screen shot your iPhone or code and share with **\#flatironcodeclub** and **\#iphoneorganizer**.
+
 
 
