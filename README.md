@@ -203,7 +203,7 @@ Copy the code below and paste it into `css/relative.css`:
 }
 ```
 
-On all three images, we're using the id as our CSS selector. From there, we're setting `postion: absolute;` And then we're setting the `margin-top` and `margin-left`, as well as the image `height`.
+On all three images, we're using the ID on the image as our CSS selector. From there, we're setting `postion: absolute;` And then we're setting the `margin-top` and `margin-left`, as well as the image `height`.
 
 Save and refresh in the browser. Go ahead and try to shrink your browser window.
 
