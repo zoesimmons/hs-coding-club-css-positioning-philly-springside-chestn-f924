@@ -14,7 +14,7 @@ When you look at the site in the browser, you'll notice the icons are all clumpe
 
 #### Step 1:
 
-Open this lesson by clicking `Open in Nitrous` at the top of this page. You'll want to have `index.html`, `css/absolute.css` and `css/relative.css` open in the Nitrous text editor, as well as the browser. Take a look at the `How To: Open A Lab` for a refresher on how to get this done!
+Open this lesson by clicking `Open` at the top of this page. You'll want to have `index.html`, `css/absolute.css` and `css/relative.css` open in the Nitrous text editor, as well as the browser. Take a look at the `How To: Open A Lab` for a refresher on how to get this done!
 
 #### Step 2:
 
