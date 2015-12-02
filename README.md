@@ -268,3 +268,5 @@ Do you know what time is? Time to share your work! Screen shot your iPhone or co
 
 
 
+
+<a href='https://learn.co/lessons/hs-coding-club-css-positioning' data-visibility='hidden'>View this lesson on Learn.co</a>
