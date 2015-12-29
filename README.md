@@ -59,7 +59,7 @@ The first property we set is `position`. This property can have several differen
 
 We set `position: absolute;` for now, which means the position of this `div` containing the three icons is never going to move. We the set `top: 300px`, meaning the images are going to be 300 pixels away from the top of the page. We also set `left: 620px;` meaning the images are going to be 620 pixels from the left side of the page.
 
-#### Step 4: 
+#### Step 5: 
 
 We want to go ahead and use the same CSS for the other two divs of images. Copy and paste the following code in `css/absolute.css`:
 
@@ -80,7 +80,7 @@ If you look at this code, you'll notice the distance from the left side of the p
 
 Save your changes, and refresh in the browser. Finally we have all the icons on the screen!
 
-#### Step 5: 
+#### Step 6: 
 
 Now we need to space the icons away from each other appropriately. You'll remember from the box model, that `margin` governs the space between elements. We can set `margin-left` and `margin-right`.
 
@@ -107,7 +107,7 @@ We already have Snapchat where we want it on the left, we just need space on the
 
 Save and refresh in the browser!
 
-#### Step 6:
+#### Step 7:
 
 Let's fix the last 6 icons. Copy and paste the following into your `css/absolute.css`:
 
@@ -140,7 +140,7 @@ Let's fix the last 6 icons. Copy and paste the following into your `css/absolute
 }
 ```
 
-#### Step 7:
+#### Step 8:
 
 Save, refresh in the browser and see your perfectly laid out icons! But now try and shrink the browser. What happens? Your site might look something like this: 
 
@@ -268,5 +268,3 @@ Do you know what time is? Time to share your work! Screen shot your iPhone or co
 
 
 
-
-<a href='https://learn.co/lessons/hs-coding-club-css-positioning' data-visibility='hidden'>View this lesson on Learn.co</a>
