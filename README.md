@@ -268,3 +268,5 @@ Do you know what time is? Time to share your work! Screen shot your iPhone or co
 
 
 
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/hs-coding-club-css-positioning' title='iPhone Organizer'>iPhone Organizer</a> on Learn.co and start learning to code for free.</p>
